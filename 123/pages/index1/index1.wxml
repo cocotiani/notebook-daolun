@@ -1,0 +1,25 @@
+<view class="weather"> 
+  <text>{{weatherData}}</text> 
+
+  <text wx:if="{{weatherData.temperature>30}}" style="color: blueviolet;font-family:PingFangSC-Regular;font-size:12px;top: 65%;left: 32%;position: absolute;">提示~天气炎热，注意多喝水哦~</text>
+
+  <text wx:elif="{{weatherData.temperature>20&&weatherData.temperature<=30}}" style="color: blueviolet;font-family:PingFangSC-Regular;font-size:12px;top: 65%;left: 32%;position: absolute;">提示~流行性疾病多发，注意自我保护</text>
+
+<text wx:elif="{{weatherData.temperature>10&&weatherData.temperature<=20}}" style="color: blueviolet;font-family:PingFangSC-Regular;font-size:12px;top: 65%;left: 32%;position: absolute;">提示~卫衣别留着过年啊</text>
+
+<text wx:elif="{{weatherData.temperature>0&&weatherData.temperature<=10}}" style="color: blueviolet;font-family:PingFangSC-Regular;font-size:12px;top: 65%;left: 32%;position: absolute;">提示~爱美更要爱身体</text>
+
+<text wx:else style="color: blueviolet;font-family:PingFangSC-Regular;font-size:12px;top: 95%;left: 32%;position: absolute;">提示~暖气空调别客气</text>
+
+</view>
+
+<view class="userinfo">
+<image class='userBg' src='../../../images/weather1.png'></image>
+
+<view class='userContent'>
+
+<view class="userinfo-avatar" background-size="cover"><open-data type="userAvatarUrl"></open-data></view>
+<open-data type="userNickName" class="userinfo-nickname"></open-data>
+<text style='color:seashell;'>\n\n\n每天都是元气满满一天哦</text>
+</view>
+</view>

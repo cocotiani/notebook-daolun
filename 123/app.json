@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/list/list",
+    "pages/add/add",
+    "pages/wifi_station/tianqi/tianqi",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/post/post",
+    "pages/post/edit/edit",
+    "pages/post/list/list",
+    "pages/post/detail/detail",
+    "pages/index1/index1",
+    "pages/logs1/logs1",
+    "pages/index3/index3",
+    "pages/logs3/logs3"
+  ],
+  
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "skyblue",
+    "navigationBarTitleText": "超智能的记事本",
+    "navigationBarTextStyle": "black"
+  }
+}
